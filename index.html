@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Special+Elite&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div class="logo-img">
+                    <img src="./img/books-logo.png" alt="logo Books store" class="logo-img">
+                </div>
+                <h3 class="logo-text f700">My Books</h3>
+            </div>
+        </header>
+        <main>
+            <div class="maincontent-header">
+                <h1 class="f500">Bookshelves</h1>
+                <button type="button" class="btn-addBook">Add book</button>
+            </div>
+            <section class="formAddBook hidden">
+                <div class="formContent">
+                    <button type="button" class="exit">x</button>
+                    <form action="#">
+                        <h3 class="f500">Add book to library</h3>
+                        <div class="formInfomation f300">
+                            <div class="form-title">
+                                <label for="title" class="label-title"><abbr title="required">*</abbr>Title:</label>
+                                <input type="text" name="title" id="title" required>
+                            </div>
+                            <div class="form-author">
+                                <label for="author" class="label-author"><abbr title="required">*</abbr>The author
+                                    is:</label>
+                                <input type="text" name="author" id="author" required>
+                            </div>
+                            <div class="form-pages">
+                                <label for="pages" class="label-pages"><abbr title="required">*</abbr>Pages of the
+                                    book:</label>
+                                <input type="number" name="pages" id="pages" required>
+                            </div>
+                            <div class="form-read">
+                                <label for="read" class="label-read"><abbr title="required">*</abbr>Have you read it
+                                    yet?</label>
+                                <input type="checkbox" name="read" id="read" required checked>
+                            </div>
+                            <div class="form-image">
+                                <label for="image" class="label-image">Add image</label>
+                                <input type="file" name="image" id="image">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-submit">Add book</button>
+                    </form>
+                </div>
+            </section>
+            <article class="booksStore">
+                <div class="books">
+                    <!-- <div class="book-card">
+                        <header class="book-header"></header>
+                        <main class="book-infomation">
+                            <section class="book-description">
+                                <h4 class="book-title f400">Harry Porter</h4>
+                                <p class="book-author f300">by JK Rowling</p>
+                                <p class="book-pages f300">435 pages</p>
+                            </section>
+                            <section class="book-action">
+                                <button type="button" class="btn-read">Read</button>
+                                <button type="button" class="btn-remove">Remove</button>
+                            </section>
+                        </main>
+                    </div> -->
+
+                </div>
+            </article>
+        </main>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
