@@ -24,13 +24,18 @@ let myLibrary = [
 const books = document.querySelector('.books')
 const btnAddBook = document.querySelector('.btn-addBook')
 const form = document.querySelector('.formAddBook');
-function Book(title, author, pages, read, image = 'https://images.unsplash.com/photo-1491841573634-28140fc7ced7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
-    this.image = image;
+class Book {
+    constructor(title, author, pages, read, image = 'https://images.unsplash.com/photo-1491841573634-28140fc7ced7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+        this.image = image;
+    }
+
+
 }
+
 function addBookToLibrary(book) {
     myLibrary.push(book)
 }
